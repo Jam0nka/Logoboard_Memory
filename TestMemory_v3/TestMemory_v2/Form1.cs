@@ -12,9 +12,190 @@ namespace TestMemory_v2
 {
     public partial class Form1 : Form
     {
+        // firstClicked points to the first Label control 
+        // that the player clicks, but it will be null 
+        // if the player hasn't clicked a label yet
+        PictureBox firstClicked = null;
+
+        // secondClicked points to the second Label control 
+        // that the player clicks
+        PictureBox secondClicked = null;
+
+        // Use this Random object to choose random icons for the squares
+        Random random = new Random();
+
+        string absolutNull = "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/0.png";
+
+        // Each of these letters is an interesting icon
+        // in the Webdings font,
+        // and each icon appears twice in this list
+        List<string> icons = new List<string>()
+        {
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/1.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/1.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/2.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/2.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/3.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/3.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/4.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/4.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/5.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/5.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/6.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/6.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/7.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/7.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/8.png",
+            "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/8.png"
+        };
+
+        List<string> icons2 = new List<string>()
+        {
+            
+        };
+
+        private void AssignIconsToList()
+        {
+            // The TableLayoutPanel has 16 labels,
+            // and the icon list has 16 icons,
+            // so an icon is pulled at random from the list
+            // and added to each label
+            for (int i = 0; i < 16; i++)
+            {
+                int randomNumber = random.Next(icons.Count);
+                icons2.Add(icons[randomNumber]);
+                icons.RemoveAt(randomNumber);
+                
+            }
+            Console.WriteLine(icons2);
+        }
+
+        private void AssignIconsToSquares2()
+        {
+            int i = 0;
+            foreach (Control control in tableLayoutPanel2.Controls)
+            {
+                PictureBox iconPic = control as PictureBox;
+                if (iconPic != null)
+                {
+                    iconPic.ImageLocation = icons2[i];
+                    //iconPic.Visible = false;
+                    i++;
+                }
+            }
+        }
+
+            private void AssignIconsToSquares()
+        {
+            // The TableLayoutPanel has 16 labels,
+            // and the icon list has 16 icons,
+            // so an icon is pulled at random from the list
+            // and added to each label
+            foreach (Control control in tableLayoutPanel2.Controls)
+            {
+                PictureBox iconPic = control as PictureBox;
+                if (iconPic != null)
+                {
+                    int randomNumber = random.Next(icons.Count);
+                    iconPic.ImageLocation = icons[randomNumber];
+                    iconPic.Visible = false;
+                    icons.RemoveAt(randomNumber);
+                }
+            }
+        }
+
+
+
         public Form1()
         {
             InitializeComponent();
+
+            AssignIconsToList();
+
+            //AssignIconsToSquares2();
+
+            //AssignIconsToSquares();
+        }
+
+        private void PictureBox_click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
+                return;
+
+            PictureBox clickedPic= sender as PictureBox;
+
+            if (clickedPic != null)
+            {
+
+                clickedPic.SizeMode = PictureBoxSizeMode.Zoom;
+
+                if (clickedPic == firstClicked)
+                    return;
+
+                if (firstClicked == null)
+                {
+                    //int indexx = Int32.Parse(clickedPic.Name.Substring(10, 1));
+                    firstClicked = clickedPic;
+                    firstClicked.ImageLocation = icons2[Int32.Parse(clickedPic.Name.Substring(10, 2)) - 1];
+                    return;
+                }
+
+                secondClicked = clickedPic;
+                secondClicked.ImageLocation = icons2[Int32.Parse(clickedPic.Name.Substring(10, 2)) - 1];
+
+                CheckForWinner();
+
+                if (firstClicked.ImageLocation == secondClicked.ImageLocation)
+                {
+                    firstClicked = null;
+                    secondClicked = null;
+                    return;
+                }
+
+
+                timer1.Start();
+
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+
+            firstClicked.ImageLocation = absolutNull;
+            firstClicked.SizeMode = PictureBoxSizeMode.Zoom;
+            secondClicked.ImageLocation = absolutNull;
+            secondClicked.SizeMode = PictureBoxSizeMode.Zoom;
+
+            firstClicked = null;
+            secondClicked = null;
+        }
+
+        private void CheckForWinner()
+        {
+            // Go through all of the labels in the TableLayoutPanel, 
+            // checking each one to see if its icon is matched
+            foreach (Control control in tableLayoutPanel2.Controls)
+            {
+                PictureBox iconPic = control as PictureBox;
+
+                if (iconPic != null)
+                {
+                    if (iconPic.ImageLocation != absolutNull)
+                        return;
+                }
+            }
+
+            // If the loop didn’t return, it didn't find
+            // any unmatched icons
+            // That means the user won. Show a message and close the form
+            MessageBox.Show("You matched all the icons!", "Congratulations");
+            Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

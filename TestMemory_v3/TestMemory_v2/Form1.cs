@@ -12,23 +12,21 @@ namespace TestMemory_v2
 {
     public partial class Form1 : Form
     {
-        // firstClicked points to the first Label control 
-        // that the player clicks, but it will be null 
-        // if the player hasn't clicked a label yet
+        // Variable declaration start -----------------------------------------------------------------------
+
+        // Creating variable, to check, if first item is already open
         PictureBox firstClicked = null;
 
-        // secondClicked points to the second Label control 
-        // that the player clicks
+        // Creating variable to save the secound item, when @firstClicked is already set
         PictureBox secondClicked = null;
 
-        // Use this Random object to choose random icons for the squares
+        // Creating a variable to select random items in the @AssignIconsToList() methode
         Random random = new Random();
 
+        // Creating a vriable with the src of the background card
         string absolutNull = "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/0.png";
 
-        // Each of these letters is an interesting icon
-        // in the Webdings font,
-        // and each icon appears twice in this list
+        // Creating a variable to save all the src's of the logos
         List<string> icons = new List<string>()
         {
             "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/1.png",
@@ -49,27 +47,29 @@ namespace TestMemory_v2
             "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/8.png"
         };
 
-        List<string> icons2 = new List<string>()
-        {
-            
-        };
+        // Creating a variable, that will save the rdm selected srcs
+        List<string> icons2 = new List<string>(){};
 
+
+        // Variable declaration end -------------------------------------------------------------------------
+        // methode declaration start ------------------------------------------------------------------------
+
+
+        // Creating a methode, that assignes the srcs in a rdm order to the @icons2 List
         private void AssignIconsToList()
         {
-            // The TableLayoutPanel has 16 labels,
-            // and the icon list has 16 icons,
-            // so an icon is pulled at random from the list
-            // and added to each label
+            // loop repeates 16 times because of the 16 srcs in @icons. -> more? need a variable or .length of @icons
             for (int i = 0; i < 16; i++)
             {
                 int randomNumber = random.Next(icons.Count);
                 icons2.Add(icons[randomNumber]);
                 icons.RemoveAt(randomNumber);
-                
             }
-            Console.WriteLine(icons2);
+            // Following is for testin purposes
+            // Console.WriteLine(icons2);
         }
 
+        // Test methode, that is not relevant for the softwae functionalaty
         private void AssignIconsToSquares2()
         {
             int i = 0;
@@ -85,12 +85,10 @@ namespace TestMemory_v2
             }
         }
 
-            private void AssignIconsToSquares()
+        // methode to assigne the pictures to the grid
+        private void AssignIconsToSquares()
         {
-            // The TableLayoutPanel has 16 labels,
-            // and the icon list has 16 icons,
-            // so an icon is pulled at random from the list
-            // and added to each label
+            // The TableLayoutPanel has 16 pictures, therefor we have 16 loops
             foreach (Control control in tableLayoutPanel2.Controls)
             {
                 PictureBox iconPic = control as PictureBox;

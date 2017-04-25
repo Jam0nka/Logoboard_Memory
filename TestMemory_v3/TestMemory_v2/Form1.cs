@@ -26,6 +26,8 @@ namespace TestMemory_v2
         // Creating a vriable with the src of the background card
         string absolutNull = "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/0.png";
 
+        int ctb = 1;
+
         // Creating a variable to save all the src's of the logos
         List<string> icons = new List<string>()
         {
@@ -65,9 +67,17 @@ namespace TestMemory_v2
                 icons2.Add(icons[randomNumber]);
                 icons.RemoveAt(randomNumber);
             }
-            // Following is for testin purposes
-            // Console.WriteLine(icons2);
-        }
+
+            foreach (Control control in tableLayoutPanel2.Controls)
+            {
+                PictureBox iconPic = control as PictureBox;
+                iconPic.ImageLocation = absolutNull;
+                iconPic.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+
+                // Following is for testin purposes
+                // Console.WriteLine(icons2);
+            }
 
         // Test methode, that is not relevant for the softwae functionalaty
         private void AssignIconsToSquares2()
@@ -120,7 +130,7 @@ namespace TestMemory_v2
             if (timer1.Enabled == true)
                 return;
 
-            PictureBox clickedPic= sender as PictureBox;
+            PictureBox clickedPic = sender as PictureBox;
 
             if (clickedPic != null)
             {
@@ -150,7 +160,6 @@ namespace TestMemory_v2
                     return;
                 }
 
-
                 timer1.Start();
 
             }
@@ -171,22 +180,31 @@ namespace TestMemory_v2
 
         private void CheckForWinner()
         {
+            //Console.WriteLine(ctb + " newCheck");
+            //int sf = 1;
             // Go through all of the labels in the TableLayoutPanel, 
             // checking each one to see if its icon is matched
             foreach (Control control in tableLayoutPanel2.Controls)
             {
                 PictureBox iconPic = control as PictureBox;
 
-                if (iconPic != null)
+                if (iconPic.ImageLocation != null)
                 {
-                    if (iconPic.ImageLocation != absolutNull)
+                    Console.WriteLine("Jochen: " + iconPic.ImageLocation);
+                    if (iconPic.ImageLocation == absolutNull)
+                    {
+                        //Console.WriteLine(iconPic.ImageLocation);
+                        //sf++;
+                        //ctb++;
                         return;
+                    }
                 }
             }
 
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
+            //Console.WriteLine("yees3");
             MessageBox.Show("You matched all the icons!", "Congratulations");
             Close();
         }

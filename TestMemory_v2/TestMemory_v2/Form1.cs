@@ -156,6 +156,8 @@ namespace TestMemory_v2
         /// </summary>
         private void CheckForWinner()
         {
+            //Console.WriteLine("new Check");
+            //int ct = 1;
             // Go through all of the labels in the TableLayoutPanel, 
             // checking each one to see if its icon is matched
             foreach (Control control in tableLayoutPanel2.Controls)
@@ -164,8 +166,11 @@ namespace TestMemory_v2
 
                 if (iconLabel != null)
                 {
-                    if (iconLabel.ForeColor == iconLabel.BackColor)
-                        return;
+                    if (iconLabel.ForeColor == iconLabel.BackColor) { 
+                    //Console.WriteLine("iwas" + ct);
+                    //ct++;
+                    return;
+                    }
                 }
             }
 

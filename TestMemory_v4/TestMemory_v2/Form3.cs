@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace TestMemory_v2
 {
-    public partial class After_Screen : Form
+    public partial class Form3 : Form
     {
-        public After_Screen()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
@@ -26,17 +26,16 @@ namespace TestMemory_v2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Memory_Screen().Show();
-            Close();
+            new Form4().Show();
+            Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Form3().Show();
-            Close();
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

@@ -11,7 +11,7 @@ using NLog;
 
 namespace TestMemory_v2
 {
-    public partial class Form1 : Form
+    public partial class Memory_Screen : Form
     {
         // Variable declaration start -----------------------------------------------------------------------
 
@@ -28,6 +28,8 @@ namespace TestMemory_v2
         string absolutNull = "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/0.png";
 
         //int ctb = 1;
+
+        int counter;
 
         Logger logger = LogManager.GetCurrentClassLogger();
 
@@ -120,7 +122,7 @@ namespace TestMemory_v2
 
 
 
-        public Form1()
+        public Memory_Screen()
         {
             InitializeComponent();
 
@@ -156,6 +158,8 @@ namespace TestMemory_v2
 
                 secondClicked = clickedPic;
                 secondClicked.ImageLocation = icons2[Int32.Parse(clickedPic.Name.Substring(10, 2)) - 1];
+
+                counter++;
 
                 CheckForWinner();
 
@@ -196,7 +200,7 @@ namespace TestMemory_v2
 
                 if (iconPic.ImageLocation != null)
                 {
-                    Console.WriteLine("Jochen: " + iconPic.ImageLocation);
+                    //Console.WriteLine("Jochen: " + iconPic.ImageLocation);
                     if (iconPic.ImageLocation == absolutNull)
                     {
                         //Console.WriteLine(iconPic.ImageLocation);
@@ -213,9 +217,9 @@ namespace TestMemory_v2
             //Console.WriteLine("yees3");
             end = DateTime.Now.ToString("HH:mm:ss tt");
             TimeSpan duration = DateTime.Parse(end).Subtract(DateTime.Parse(start));
-            logger.Info("Duration: " + duration.ToString());
-            new Form2().Show();
-            Hide();
+            logger.Info(duration.ToString() + " " + counter);
+            new After_Screen().Show();
+            Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)

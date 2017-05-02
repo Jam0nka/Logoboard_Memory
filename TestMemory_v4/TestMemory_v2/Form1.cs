@@ -138,7 +138,7 @@ namespace TestMemory_v2
 
             PictureBox clickedPic = sender as PictureBox;
 
-            if (clickedPic != null)
+            if (clickedPic.ImageLocation == absolutNull)
             {
 
                 clickedPic.SizeMode = PictureBoxSizeMode.Zoom;
@@ -211,7 +211,6 @@ namespace TestMemory_v2
             // any unmatched icons
             // That means the user won. Show a message and close the form
             //Console.WriteLine("yees3");
-            MessageBox.Show("You matched all the icons!", "Congratulations");
             end = DateTime.Now.ToString("HH:mm:ss tt");
             TimeSpan duration = DateTime.Parse(end).Subtract(DateTime.Parse(start));
             logger.Info("Duration: " + duration.ToString());
@@ -221,7 +220,9 @@ namespace TestMemory_v2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

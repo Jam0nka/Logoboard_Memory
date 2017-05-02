@@ -103,7 +103,7 @@ namespace TestMemory_v2
             {
                 PictureBox iconPic = control as PictureBox;
                 if (iconPic != null)
-                {
+                {   
                     int randomNumber = random.Next(icons.Count);
                     iconPic.ImageLocation = icons[randomNumber];
                     iconPic.Visible = false;

@@ -25,3 +25,4 @@ C:\4AI\Logoboard_Memory_Entwicklung\TestMemory_v3\TestMemory_v2\obj\Debug\TestMe
 C:\4AI\Logoboard_Memory_Entwicklung\TestMemory_v3\TestMemory_v2\bin\Debug\TestMemory_v2.exe.config
 C:\4AI\Logoboard_Memory_Entwicklung\TestMemory_v3\TestMemory_v2\bin\Debug\TestMemory_v2.exe
 C:\4AI\Logoboard_Memory_Entwicklung\TestMemory_v3\TestMemory_v2\bin\Debug\TestMemory_v2.pdb
+C:\4AI\Logoboard_Memory_Entwicklung\TestMemory_v3\TestMemory_v2\obj\Debug\TestMemory_v2.Form2.resources

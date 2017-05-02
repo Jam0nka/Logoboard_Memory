@@ -26,7 +26,7 @@ namespace TestMemory_v2
         // Creating a vriable with the src of the background card
         string absolutNull = "C:/4AI/Logoboard_Memory_Entwicklung/TestMemory_v3/Logosimages/0.png";
 
-        int ctb = 1;
+        //int ctb = 1;
 
         // Creating a variable to save all the src's of the logos
         List<string> icons = new List<string>()
@@ -206,7 +206,8 @@ namespace TestMemory_v2
             // That means the user won. Show a message and close the form
             //Console.WriteLine("yees3");
             MessageBox.Show("You matched all the icons!", "Congratulations");
-            Close();
+            new Form2().Show();
+            Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)

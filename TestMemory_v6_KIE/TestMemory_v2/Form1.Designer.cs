@@ -79,11 +79,11 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2853, 1614);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(958, 548);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -111,16 +111,16 @@
             this.tableLayoutPanel2.Controls.Add(this.pictureBox02, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox01, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(624, 31);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 31, 0, 31);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(209, 16);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 16, 0, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1604, 1552);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(538, 516);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox16
@@ -128,10 +128,10 @@
             this.pictureBox16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.BackgroundImage")));
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(1207, 1169);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox16.Location = new System.Drawing.Point(404, 390);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox16.Size = new System.Drawing.Size(132, 123);
             this.pictureBox16.TabIndex = 15;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Click += new System.EventHandler(this.PictureBox_click);
@@ -141,10 +141,10 @@
             this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(806, 1169);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox15.Location = new System.Drawing.Point(270, 390);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox15.Size = new System.Drawing.Size(130, 123);
             this.pictureBox15.TabIndex = 14;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Click += new System.EventHandler(this.PictureBox_click);
@@ -154,10 +154,10 @@
             this.pictureBox14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.BackgroundImage")));
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(405, 1169);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox14.Location = new System.Drawing.Point(136, 390);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox14.Size = new System.Drawing.Size(130, 123);
             this.pictureBox14.TabIndex = 13;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Click += new System.EventHandler(this.PictureBox_click);
@@ -167,10 +167,10 @@
             this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
             this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Location = new System.Drawing.Point(4, 1169);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox13.Location = new System.Drawing.Point(2, 390);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox13.Size = new System.Drawing.Size(130, 123);
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.PictureBox_click);
@@ -180,10 +180,10 @@
             this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Location = new System.Drawing.Point(1207, 781);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox12.Location = new System.Drawing.Point(404, 261);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox12.Size = new System.Drawing.Size(132, 123);
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Click += new System.EventHandler(this.PictureBox_click);
@@ -193,10 +193,10 @@
             this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(806, 781);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox11.Location = new System.Drawing.Point(270, 261);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox11.Size = new System.Drawing.Size(130, 123);
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.PictureBox_click);
@@ -206,10 +206,10 @@
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(405, 781);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox10.Location = new System.Drawing.Point(136, 261);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox10.Size = new System.Drawing.Size(130, 123);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.PictureBox_click);
@@ -219,10 +219,10 @@
             this.pictureBox09.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox09.BackgroundImage")));
             this.pictureBox09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox09.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox09.Location = new System.Drawing.Point(4, 781);
-            this.pictureBox09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox09.Location = new System.Drawing.Point(2, 261);
+            this.pictureBox09.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox09.Name = "pictureBox09";
-            this.pictureBox09.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox09.Size = new System.Drawing.Size(130, 123);
             this.pictureBox09.TabIndex = 8;
             this.pictureBox09.TabStop = false;
             this.pictureBox09.Click += new System.EventHandler(this.PictureBox_click);
@@ -232,10 +232,10 @@
             this.pictureBox08.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox08.BackgroundImage")));
             this.pictureBox08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox08.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox08.Location = new System.Drawing.Point(1207, 393);
-            this.pictureBox08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox08.Location = new System.Drawing.Point(404, 132);
+            this.pictureBox08.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox08.Name = "pictureBox08";
-            this.pictureBox08.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox08.Size = new System.Drawing.Size(132, 123);
             this.pictureBox08.TabIndex = 7;
             this.pictureBox08.TabStop = false;
             this.pictureBox08.Click += new System.EventHandler(this.PictureBox_click);
@@ -245,10 +245,10 @@
             this.pictureBox07.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox07.BackgroundImage")));
             this.pictureBox07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox07.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox07.Location = new System.Drawing.Point(806, 393);
-            this.pictureBox07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox07.Location = new System.Drawing.Point(270, 132);
+            this.pictureBox07.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox07.Name = "pictureBox07";
-            this.pictureBox07.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox07.Size = new System.Drawing.Size(130, 123);
             this.pictureBox07.TabIndex = 6;
             this.pictureBox07.TabStop = false;
             this.pictureBox07.Click += new System.EventHandler(this.PictureBox_click);
@@ -258,10 +258,10 @@
             this.pictureBox06.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox06.BackgroundImage")));
             this.pictureBox06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox06.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox06.Location = new System.Drawing.Point(405, 393);
-            this.pictureBox06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox06.Location = new System.Drawing.Point(136, 132);
+            this.pictureBox06.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox06.Name = "pictureBox06";
-            this.pictureBox06.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox06.Size = new System.Drawing.Size(130, 123);
             this.pictureBox06.TabIndex = 5;
             this.pictureBox06.TabStop = false;
             this.pictureBox06.Click += new System.EventHandler(this.PictureBox_click);
@@ -271,10 +271,10 @@
             this.pictureBox05.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox05.BackgroundImage")));
             this.pictureBox05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox05.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox05.Location = new System.Drawing.Point(4, 393);
-            this.pictureBox05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox05.Location = new System.Drawing.Point(2, 132);
+            this.pictureBox05.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox05.Name = "pictureBox05";
-            this.pictureBox05.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox05.Size = new System.Drawing.Size(130, 123);
             this.pictureBox05.TabIndex = 4;
             this.pictureBox05.TabStop = false;
             this.pictureBox05.Click += new System.EventHandler(this.PictureBox_click);
@@ -284,10 +284,10 @@
             this.pictureBox04.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox04.BackgroundImage")));
             this.pictureBox04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox04.Location = new System.Drawing.Point(1207, 5);
-            this.pictureBox04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox04.Location = new System.Drawing.Point(404, 3);
+            this.pictureBox04.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox04.Name = "pictureBox04";
-            this.pictureBox04.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox04.Size = new System.Drawing.Size(132, 123);
             this.pictureBox04.TabIndex = 3;
             this.pictureBox04.TabStop = false;
             this.pictureBox04.Click += new System.EventHandler(this.PictureBox_click);
@@ -297,10 +297,10 @@
             this.pictureBox03.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox03.BackgroundImage")));
             this.pictureBox03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox03.Location = new System.Drawing.Point(806, 5);
-            this.pictureBox03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox03.Location = new System.Drawing.Point(270, 3);
+            this.pictureBox03.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox03.Name = "pictureBox03";
-            this.pictureBox03.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox03.Size = new System.Drawing.Size(130, 123);
             this.pictureBox03.TabIndex = 2;
             this.pictureBox03.TabStop = false;
             this.pictureBox03.Click += new System.EventHandler(this.PictureBox_click);
@@ -310,10 +310,10 @@
             this.pictureBox02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox02.BackgroundImage")));
             this.pictureBox02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox02.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox02.Location = new System.Drawing.Point(405, 5);
-            this.pictureBox02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox02.Location = new System.Drawing.Point(136, 3);
+            this.pictureBox02.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox02.Name = "pictureBox02";
-            this.pictureBox02.Size = new System.Drawing.Size(393, 378);
+            this.pictureBox02.Size = new System.Drawing.Size(130, 123);
             this.pictureBox02.TabIndex = 1;
             this.pictureBox02.TabStop = false;
             this.pictureBox02.Click += new System.EventHandler(this.PictureBox_click);
@@ -322,10 +322,11 @@
             // 
             this.pictureBox01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox01.BackgroundImage")));
             this.pictureBox01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox01.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox01.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox01.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox01.Name = "pictureBox01";
-            this.pictureBox01.Size = new System.Drawing.Size(392, 378);
+            this.pictureBox01.Size = new System.Drawing.Size(130, 123);
             this.pictureBox01.TabIndex = 0;
             this.pictureBox01.TabStop = false;
             this.pictureBox01.Click += new System.EventHandler(this.PictureBox_click);
@@ -337,12 +338,12 @@
             // 
             // Memory_Screen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(2853, 1614);
+            this.ClientSize = new System.Drawing.Size(958, 548);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Memory_Screen";
             this.Text = "Sponsorenboard Memory";
             this.Load += new System.EventHandler(this.Form1_Load);

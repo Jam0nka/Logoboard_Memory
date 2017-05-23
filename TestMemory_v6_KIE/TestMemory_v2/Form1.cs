@@ -240,7 +240,7 @@ namespace TestMemory_v2
             end = DateTime.Now.ToString("HH:mm:ss tt");
             TimeSpan duration = DateTime.Parse(end).Subtract(DateTime.Parse(start));
             logger.Info(duration.ToString() + " " + counter);
-            new After_Screen().Show();
+            new After_Screen(duration.ToString()).Show();
             Close();
         }
 

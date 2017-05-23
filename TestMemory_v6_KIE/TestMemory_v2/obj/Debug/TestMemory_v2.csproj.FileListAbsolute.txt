@@ -116,3 +116,5 @@ C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2
 C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2\obj\Debug\TestMemory_v2.csproj.GenerateResource.Cache
 C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2\obj\Debug\TestMemory_v2.exe
 C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2\obj\Debug\TestMemory_v2.pdb
+C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2\obj\Debug\TestMemory_v2.Form5.resources
+C:\Users\Niki\Desktop\Schule\ITP\Praxis\CloneRep\TestMemory_v6_KIE\TestMemory_v2\obj\Debug\TestMemory_v2.Form6.resources

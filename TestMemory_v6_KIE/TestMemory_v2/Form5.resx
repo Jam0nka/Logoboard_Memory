@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Das Spielfeld besteht insgesamt aus 16 Karten (4x4).
-
-Zu Beginn sind die Kärtchen umgedreht. Nun geht es darum Paare zu finden, indem man zwei Kärtchen
-
-umdreht. Sind diese dieselben bleiben sie offen, wenn sie jedoch nicht gleich sind, drehen sie sich nach 2
-
-Sekunden wieder um, und man muss sich merken wo diese gelegen sind.
-
-Gewonnen hat man, wenn man alle Paare umgedreht hat.
-</value>
-  </data>
 </root>

@@ -87,7 +87,8 @@ namespace TestMemory_v2
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            new Form5().Show();
+            Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -103,12 +104,14 @@ namespace TestMemory_v2
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-
+            new Form5().Show();
+            Hide();
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
         {
-
+            new Form6().Show();
+            Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -119,12 +122,14 @@ namespace TestMemory_v2
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            new Form6().Show();
+            Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            new Form5().Show();
+            Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
